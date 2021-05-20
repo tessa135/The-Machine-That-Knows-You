@@ -1,0 +1,12 @@
+name: experienceai
+title:
+username:
+account: experienceai
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 3573306
+bundleId: 4483914
+url: https://experienceai.shinyapps.io/experienceai/
+when: 1618670021.20915
+asMultiple: FALSE
+asStatic: FALSE
