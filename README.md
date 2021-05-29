@@ -19,21 +19,20 @@
 *** See the bottom of this document for the declaration of the reference variables
 *** for contributors-url, forks-url, etc. This is an optional, concise syntax you may use.
 *** https://www.markdownguide.org/basic-syntax/#reference-style-links
--->
+
 [![Contributors][contributors-shield]][contributors-url]
 [![Forks][forks-shield]][forks-url]
 [![Stargazers][stars-shield]][stars-url]
 [![Issues][issues-shield]][issues-url]
 [![MIT License][license-shield]][license-url]
 [![LinkedIn][linkedin-shield]][linkedin-url]
-
+-->
 
 
 <!-- PROJECT LOGO -->
 <br />
 <p align="center">
   <a href="https://github.com/tessa135/The-Machine-That-Knows-You">
-    <img src="images/logo.png" alt="Logo" width="80" height="80">
   </a>
 
   <h3 align="center">The Machine That Knows You</h3>
@@ -71,7 +70,7 @@
         <li><a href="#installation">Installation</a></li>
       </ul>
     </li>
-   <!-- <li><a href="#usage">Usage</a></li>
+    <!--<li><a href="#usage">Usage</a></li>
     <li><a href="#roadmap">Roadmap</a></li>
     <li><a href="#contributing">Contributing</a></li>
     <li><a href="#license">License</a></li>-->
@@ -87,10 +86,10 @@
 
 [![Product Name Screen Shot][product-screenshot]](https://experienceai.shinyapps.io/experienceai/)
 
-Here's a blank template to get started:
+<!--Here's a blank template to get started:
 **To avoid retyping too much info. Do a search and replace with your text editor for the following:**
 `tessa135`, `The-Machine-That-Knows-You`, `twitter_handle`, `tessa.lottermann@gmx.de`, `The Machine That Knows You`, `project_description`
-
+-->
 
 ### Built With
 
@@ -132,7 +131,8 @@ conn <- dbConnect(
             username = "username",
             password = "password"
         )
-    ```
+```
+
 
 #### Train new models
 
@@ -150,9 +150,9 @@ Notice you might want to change the read function depending on your filetype.
 2. Export the resulting table as .csv
 3. Load this .csv to 'R-Scripts/Data_transform.R' by adding the path in 
 ```R
-	dat_auswertung <-
-  read_csv("/Your/Path/Goes/here/data.csv",
-           na = "NULL")
+	dat_auswertung <- 
+		read_csv("/Your/Path/Goes/here/data.csv", 
+				 na = "NULL")
 ```
 4. In 'R-Scripts/Data_transform.R' update the save-path
 ```R
@@ -165,7 +165,7 @@ write.csv(
 6. Load 'clean_data.csv' to 'R-Scripts/Analysis.R' by updating the path in 
 ```R
 dat_auswertung <-
-  read_csv("/Users/tessalottermann/Documents/Dokumente/Thesis/clean_data.csv")
+  read_csv("/Your/Path/Goes/here/clean_data.csv")
 ```
 7. Run Analysis.R
 
@@ -175,8 +175,7 @@ If you want to change the models used in the app, you can find more models in 'R
 
 ### More Models 
 
-More models were trained during the development of this app. They can be found here: 
-[Find more models here](https://drive.google.com/drive/folders/1SlZylGMf3l_lBntxYO_o8XBM6ZDE2jVx?usp=sharing)
+More models were trained during the development of this app. [They can be found here.](https://drive.google.com/drive/folders/1SlZylGMf3l_lBntxYO_o8XBM6ZDE2jVx?usp=sharing)
 
 **Caution!** Some of them may contain duplicate predictors in the same model! 
 
