@@ -1,7 +1,7 @@
 library(dplyr)
 
 dat_auswertung <-
-  read_csv("/Users/tessalottermann/Documents/Dokumente/Thesis/Answers.csv",
+  read_csv("/Your/Path/Goes/here/Answers.csv",
            na = "NULL")
 
 dat_auswertung <- select (dat_auswertung,-c(VPCode,VPCode_2))
@@ -107,5 +107,5 @@ dat_auswertung <-
 #Write data.frame to csv ------------------------------
 write.csv(
   dat_auswertung,
-  "/Users/tessalottermann/Documents/Dokumente/Thesis/clean_data.csv"
+  "/Your/Path/Goes/here/clean_data.csv"
 )

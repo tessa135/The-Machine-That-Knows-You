@@ -14,7 +14,7 @@ library(GGally)
 library(matrixStats)
 
 dat_auswertung <-
-  read_csv("/Users/tessalottermann/Documents/Dokumente/Thesis/clean_data.csv")
+  read_csv("/Your/Path/Goes/here/clean_data.csv")
 
 # Auswertung KIT ---------------
 dat_auswertung <-
@@ -808,5 +808,5 @@ summary(dat_auswertung$Fun)
 
 write.csv(
   dat_auswertung,
-  "/Users/tessalottermann/Documents/Dokumente/Thesis/dat_auswertung_0205_av.csv"
+  "/Your/Path/Goes/here/results.csv"
 )

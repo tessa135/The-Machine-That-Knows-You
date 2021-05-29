@@ -40,7 +40,7 @@ library(iterpc)
 # Datensatz laden ---------------------------------
 
 dat <-
-  haven::read_sav("/Users/tessalottermann/Documents/Dokumente/Thesis/cp20l_EN_1.0p.sav") %>%
+  haven::read_sav("/Your/Path/Goes/here/data.sav") %>%
   select(cp20l020:cp20l069) %>%
   rename(
     E1 = "cp20l020",
@@ -117,7 +117,7 @@ cols[[1]]
 
 for (i in 1:length(vardists)) {
   png(paste0(
-    "/Users/tessalottermann/Documents/Thesis/plots/plot_",
+    "/Your/Path/Goes/here/plot_",
     i,
     ".png"
   ))
@@ -358,7 +358,7 @@ get_model_results <- function(mdl) {
   saveRDS(
     model_svm,
     file = paste(
-      "/Users/tessalottermann/Documents/Dokumente/Thesis/RDSModels_2/svmmodel_",
+      "/Your/Path/Goes/here/svmmodel_",
       mdlsave,
       ".rds",
       sep = ""
@@ -540,14 +540,14 @@ resdf <- left_join(newdf, setdf, by = "Predictions")
 
 write.csv(
   resdf,
-  "/Users/tessalottermann/Documents/Dokumente/Thesis/results_right_april.csv"
+  "/Your/Path/Goes/here/results.csv"
 )
 
 descriptives <- summary(resdf_rf)
 
 write.csv(
   descriptives,
-  "/Users/tessalottermann/Documents/Dokumente/Thesis/descriptives_april.csv"
+  "/Your/Path/Goes/here/descriptives_results.csv"
 )
 
 
@@ -709,10 +709,10 @@ testperson <- dat[567,]
 as.matrix(testperson)
 
 premodel <-
-  readRDS(file = "/Users/tessa/Documents/Uni/Master/Thesis/Experience-AI-in-Lab/R/SVM_Models/Rdata_N10~A2+A1+C9+C3+E5+E9+O7+O3.svm")
+  readRDS(file = "Your/Path/SVM_Models/Rdata_N10~A2+A1+C9+C3+E5+E9+O7+O3.svm")
 as.matrix(premodel)
 premodel <-
-  readRDS(file = "/Users/tessa/Documents/Uni/Master/Thesis/Experience-AI-in-Lab/R/RDSmodels/svmmodel_E2~E1+A1+N1+O1+C1.rds")
+  readRDS(file = "Your/Path/RDSmodels/svmmodel_E2~E1+A1+N1+O1+C1.rds")
 pred_testperson <- predict(premodel, testperson)
 
 testp <- data.frame(c(1, 2, 3, 4, 5, 6))
@@ -862,15 +862,15 @@ for (i in bfi2bestmodel) {
 }
 
 saveRDS(nextdfbfi2,
-        file = "/Users/tessa/Documents/Uni/Master/Thesis/Experience-AI-in-Lab/R/bfi2results_mitC6.rds")
+        file = "Your/Path/bfi2results_mitC6.rds")
 
 write.csv(
   nextdfbfi2,
-  "/Users/tessa/Documents/Uni/Master/Thesis/Experience-AI-in-Lab/R/bfi2results_mitC6.csv"
+  "Your/Path/bfi2results_mitC6.csv"
 )
 
 premodel2 <-
-  readRDS(file = "/Users/tessa/Documents/Uni/Master/Thesis/Experience-AI-in-Lab/R/RDSmodels/svmmodel_A10~A7+A9+A6+A8+A2+C10+E4+N2+O2+A4+E5.rds")
+  readRDS(file = "Your/Path/RDSmodels/svmmodel_A10~A7+A9+A6+A8+A2+C10+E4+N2+O2+A4+E5.rds")
 
 ## BFI10 ---------------------------------------------------------------
 ### BFI10 Items Kombinationen generieren --------------------------------
@@ -1484,7 +1484,7 @@ iter_all_othertargets <-
 
 write.csv(
   iterresultsbfi2,
-  "/Users/tessalottermann/Documents/Thesis/iter_1-5_othertargets.csv"
+  "Your/Path/iter_1-5_othertargets.csv"
 )
 
 
@@ -1643,7 +1643,7 @@ output$bfi <- renderPlot({
 ## Testen der Modell Prediction --------------------------------------
 
 premodel <-
-  readRDS(file = "/Users/tessalottermann/Documents/Thesis/App/experienceai/svmmodel_A4~E6+A3+A8+N1+N3.rds")
+  readRDS(file = "Your/Path/svmmodel_A4~E6+A3+A8+N1+N3.rds")
 
 TESTdf <- data.frame(
   E6 = 5,
@@ -1663,7 +1663,7 @@ r <<- round(predict(premodel, TESTdf)[[1]])
 
 
 premodel2 <-
-  readRDS(file = "/Users/tessalottermann/Documents/Thesis/App/experienceai/svmmodel_O9~E2+C10+C6+N1+N3+O2.rds")
+  readRDS(file = "Your/Path/svmmodel_O9~E2+C10+C6+N1+N3+O2.rds")
 
 TESTdf2 <- data.frame(
   E2 = 1,
