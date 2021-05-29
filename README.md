@@ -38,12 +38,13 @@
   <h3 align="center">The Machine That Knows You</h3>
 
   <p align="center">
-    project_description
+    Here, we present a new experimental paradigm to study how users react when AI-enriched software reveals intimate knowledge about them. In the experiment, users interact with an AI-based personal assistant (PA). In order to learn about the user, the PA asks the user questions about their personality. The PA then uses machine learning to make predictions about how the users will respond to novel questions based on their previous responses, thus demonstrating knowledge about the users’ personality. Participants indicate whether the prediction was correct, i.e. whether they would have answered the same, or not. The paradigm allows manipulating various aspects of the PA, such as prediction accuracy, predicted personality dimensions, or aspects of presentation. We submit that this new paradigm can be used to study a multitude of novel research questions on human-AI-relations.<br/>
+	We implemented a prototype for this paradigm in R. For the machine learning backend, we trained multiple models with a support vector machine algorithm on personality data from N = 5891 participants, drawn from the publicly available LISS panel (Scherpenzeel & Das, 2010). The frontend for the PA was implemented as a Shiny web-application with a MySQL data backend. The source code will be made publicly available. The research report will include results of an initial, explorative validation study. For this web-based study a convenience sample of German citizens was recruited. The participants receive six predictions regarding their personality from the PA (drawn from the Big-5 inventory). After the interaction, participants report demographic information and rate the PA along established dimensions from human computer interaction research (e.g., likability, perceived intelligence, trust). We report the test- and validation-accuracy of the machine learning algorithm and explore how prediction accuracy affects aforementioned dimensions.  
     <br />
     <a href="https://github.com/tessa135/The-Machine-That-Knows-You"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="https://experienceai.shinyapps.io/experienceai/">View Demo</a>
+    <a href="https://experienceai.shinyapps.io/experienceai/" target="_blank">View Demo</a>
     ·
     <a href="https://github.com/tessa135/The-Machine-That-Knows-You/issues">Report Bug</a>
     ·
@@ -136,13 +137,53 @@ conn <- dbConnect(
 
 #### Train new models
 
-1. Enter the path to your training-dataset in 'R-Scripts/R_learning.R'
+1. Enter the path to your training-dataset in 'R-Scripts/R_learning.R' in line 42
 ```R
 	dat <-
   haven::read_sav("/Your/Path/Goes/here/data.sav")
 ```
-
 Notice you might want to change the read function depending on your filetype.
+
+2. Add your path to save the frequency distribution plots in line 118
+
+```R
+for (i in 1:length(vardists)) {
+  png(paste0(
+    "/Your/Path/Goes/here/plot_",
+    i,
+    ".png"
+  ))
+```
+
+3. Add your path to save the svm models in line 358
+
+```R
+saveRDS(
+    model_svm,
+    file = paste(
+      "/Your/Path/Goes/here/svmmodel_",
+      mdlsave,
+      ".rds",
+      sep = ""
+    )
+  )
+```
+
+4. Add your paths to save the statistics in line 541
+
+```R
+write.csv(
+  resdf,
+  "/Your/Path/Goes/here/results.csv"
+)
+
+descriptives <- summary(resdf_rf)
+
+write.csv(
+  descriptives,
+  "/Your/Path/Goes/here/descriptives_results.csv"
+)
+```
 
 #### Calculating the results
 
