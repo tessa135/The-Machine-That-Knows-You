@@ -142,7 +142,7 @@ conn <- dbConnect(
 
 1. Enter the path to your training-dataset in [R_learning.R](R-Scripts/R_learning.R) in line 42
 ```R
-	dat <-
+dat <-
   haven::read_sav("/Your/Path/Goes/here/data.sav")
 ```
 Notice you might want to change the read function depending on your filetype.
@@ -194,9 +194,9 @@ write.csv(
 2. Export the resulting table as .csv
 3. Load this .csv to 'R-Scripts/Data_transform.R' by adding the path in 
 ```R
-	dat_auswertung <- 
-		read_csv("/Your/Path/Goes/here/data.csv", 
-				 na = "NULL")
+dat_auswertung <- 
+	read_csv("/Your/Path/Goes/here/data.csv", 
+	na = "NULL")
 ```
 4. In [Data_transform.R](R-Scripts/Data_transform.R) update the save-path
 ```R
