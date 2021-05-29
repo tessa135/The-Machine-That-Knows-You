@@ -215,7 +215,7 @@ dat_auswertung <-
 
 ### Using other models
 
-If you want to change the models used in the app, you can find more models in 'RDS-Models Correct'. The corresponding MSE and direct hit rates can be found in 'model-results.csv'.
+If you want to change the models used in the app, you can find more models in [RDS-Models Correct](RDS-Models Correct). The corresponding MSE and direct hit rates can be found in [model-results.csv](model-results.csv).
 
 ### More Models 
 
