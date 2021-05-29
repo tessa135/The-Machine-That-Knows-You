@@ -129,7 +129,7 @@ To get a local copy up and running follow these simple steps.
 1. Enter your database connection in [Server.R](App/Server.R) where 
 ```R
 conn <- dbConnect(
-        drv = RMySQL::MySQL(),
+        	drv = RMySQL::MySQL(),
             dbname = "dbname",
             host = "host",
             username = "username",
