@@ -85,7 +85,10 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-[![Product Name Screen Shot][product-screenshot]](https://experienceai.shinyapps.io/experienceai/)
+
+ <a href="https://experienceai.shinyapps.io/experienceai/">
+    <img src="images/screenshot.png">
+  </a>
 
 <!--Here's a blank template to get started:
 **To avoid retyping too much info. Do a search and replace with your text editor for the following:**
