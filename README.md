@@ -126,7 +126,7 @@ To get a local copy up and running follow these simple steps.
 
 #### Setting up the app 
 
-1. Enter your database connection in 'App/Server.R' where 
+1. Enter your database connection in [Server.R](App/Server.R) where 
 ```R
 conn <- dbConnect(
         	drv = RMySQL::MySQL(),
@@ -140,7 +140,7 @@ conn <- dbConnect(
 
 #### Train new models
 
-1. Enter the path to your training-dataset in 'R-Scripts/R_learning.R' in line 42
+1. Enter the path to your training-dataset in [R_learning.R](R-Scripts/R_learning.R) in line 42
 ```R
 	dat <-
   haven::read_sav("/Your/Path/Goes/here/data.sav")
@@ -190,7 +190,7 @@ write.csv(
 
 #### Calculating the results
 
-1. Join the database tables "User_Input", "Final_Questionnaire" and "Consent" using 'Database/Join_Tables.sql'
+1. Join the database tables "User_Input", "Final_Questionnaire" and "Consent" using [Join_Tables.sql](Database/Join_Tables.sql)
 2. Export the resulting table as .csv
 3. Load this .csv to 'R-Scripts/Data_transform.R' by adding the path in 
 ```R
@@ -198,15 +198,15 @@ write.csv(
 		read_csv("/Your/Path/Goes/here/data.csv", 
 				 na = "NULL")
 ```
-4. In 'R-Scripts/Data_transform.R' update the save-path
+4. In [Data_transform.R](R-Scripts/Data_transform.R) update the save-path
 ```R
 write.csv(
   dat_auswertung,
   "/Your/Path/Goes/here/clean_data.csv"
 )
 ```
-5. Run 'R-Scripts/Data_transform.R'
-6. Load 'clean_data.csv' to 'R-Scripts/Analysis.R' by updating the path in 
+5. Run [Data_transform.R](R-Scripts/Data_transform.R)
+6. Load 'clean_data.csv' to [Analysis.R](R-Scripts/Analysis.R) by updating the path in 
 ```R
 dat_auswertung <-
   read_csv("/Your/Path/Goes/here/clean_data.csv")

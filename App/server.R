@@ -308,9 +308,9 @@ server <- function(input, output, session) {
                      conn <- dbConnect(
                          drv = RMySQL::MySQL(),
                          dbname = "KI",
-                         host = "database-tessa.cp1otesgrats.eu-west-1.rds.amazonaws.com",
-                         username = "admin",
-                         password = "SKUH.woth4fus7aft"
+                         host = "host",
+                         username = "user",
+                         password = "password"
                      )
                      on.exit(dbDisconnect(conn), add = TRUE)
                      
@@ -383,9 +383,9 @@ server <- function(input, output, session) {
         conn <- dbConnect(
             drv = RMySQL::MySQL(),
             dbname = "KI",
-            host = "database-tessa.cp1otesgrats.eu-west-1.rds.amazonaws.com",
-            username = "admin",
-            password = "SKUH.woth4fus7aft"
+            host = "host",
+            username = "user",
+            password = "password"
         )
         on.exit(dbDisconnect(conn), add = TRUE)
         
@@ -458,9 +458,9 @@ server <- function(input, output, session) {
         conn <- dbConnect(
             drv = RMySQL::MySQL(),
             dbname = "KI",
-            host = "database-tessa.cp1otesgrats.eu-west-1.rds.amazonaws.com",
-            username = "admin",
-            password = "SKUH.woth4fus7aft"
+            host = "host",
+            username = "user",
+            password = "password"
         )
         on.exit(dbDisconnect(conn), add = TRUE)
         
@@ -534,9 +534,9 @@ server <- function(input, output, session) {
         conn <- dbConnect(
             drv = RMySQL::MySQL(),
             dbname = "KI",
-            host = "database-tessa.cp1otesgrats.eu-west-1.rds.amazonaws.com",
-            username = "admin",
-            password = "SKUH.woth4fus7aft"
+            host = "host",
+            username = "user",
+            password = "password"
         )
         on.exit(dbDisconnect(conn), add = TRUE)
         
@@ -609,9 +609,9 @@ server <- function(input, output, session) {
         conn <- dbConnect(
             drv = RMySQL::MySQL(),
             dbname = "KI",
-            host = "database-tessa.cp1otesgrats.eu-west-1.rds.amazonaws.com",
-            username = "admin",
-            password = "SKUH.woth4fus7aft"
+            host = "host",
+            username = "user",
+            password = "password"
         )
         on.exit(dbDisconnect(conn), add = TRUE)
         
@@ -673,9 +673,9 @@ server <- function(input, output, session) {
         conn <- dbConnect(
             drv = RMySQL::MySQL(),
             dbname = "KI",
-            host = "database-tessa.cp1otesgrats.eu-west-1.rds.amazonaws.com",
-            username = "admin",
-            password = "SKUH.woth4fus7aft"
+            host = "host",
+            username = "user",
+            password = "password"
         )
         on.exit(dbDisconnect(conn), add = TRUE)
         
@@ -744,9 +744,9 @@ server <- function(input, output, session) {
         conn <- dbConnect(
             drv = RMySQL::MySQL(),
             dbname = "KI",
-            host = "database-tessa.cp1otesgrats.eu-west-1.rds.amazonaws.com",
-            username = "admin",
-            password = "SKUH.woth4fus7aft"
+            host = "host",
+            username = "user",
+            password = "password"
         )
         on.exit(dbDisconnect(conn), add = TRUE)
         
@@ -776,9 +776,9 @@ server <- function(input, output, session) {
         conn <- dbConnect(
             drv = RMySQL::MySQL(),
             dbname = "KI",
-            host = "database-tessa.cp1otesgrats.eu-west-1.rds.amazonaws.com",
-            username = "admin",
-            password = "SKUH.woth4fus7aft"
+            host = "host",
+            username = "user",
+            password = "password"
         )
         on.exit(dbDisconnect(conn), add = TRUE)
         
@@ -799,9 +799,9 @@ server <- function(input, output, session) {
         conn <- dbConnect(
             drv = RMySQL::MySQL(),
             dbname = "KI",
-            host = "database-tessa.cp1otesgrats.eu-west-1.rds.amazonaws.com",
-            username = "admin",
-            password = "SKUH.woth4fus7aft"
+            host = "host",
+            username = "user",
+            password = "password"
         )
         on.exit(dbDisconnect(conn), add = TRUE)
         
@@ -822,9 +822,9 @@ server <- function(input, output, session) {
         conn <- dbConnect(
             drv = RMySQL::MySQL(),
             dbname = "KI",
-            host = "database-tessa.cp1otesgrats.eu-west-1.rds.amazonaws.com",
-            username = "admin",
-            password = "SKUH.woth4fus7aft"
+            host = "host",
+            username = "user",
+            password = "password"
         )
         on.exit(dbDisconnect(conn), add = TRUE)
         
@@ -845,9 +845,9 @@ server <- function(input, output, session) {
         conn <- dbConnect(
             drv = RMySQL::MySQL(),
             dbname = "KI",
-            host = "database-tessa.cp1otesgrats.eu-west-1.rds.amazonaws.com",
-            username = "admin",
-            password = "SKUH.woth4fus7aft"
+            host = "host",
+            username = "user",
+            password = "password"
         )
         on.exit(dbDisconnect(conn), add = TRUE)
         
@@ -868,9 +868,9 @@ server <- function(input, output, session) {
         conn <- dbConnect(
             drv = RMySQL::MySQL(),
             dbname = "KI",
-            host = "database-tessa.cp1otesgrats.eu-west-1.rds.amazonaws.com",
-            username = "admin",
-            password = "SKUH.woth4fus7aft"
+            host = "host",
+            username = "user",
+            password = "password"
         )
         on.exit(dbDisconnect(conn), add = TRUE)
         
@@ -890,9 +890,9 @@ server <- function(input, output, session) {
         conn <- dbConnect(
             drv = RMySQL::MySQL(),
             dbname = "KI",
-            host = "database-tessa.cp1otesgrats.eu-west-1.rds.amazonaws.com",
-            username = "admin",
-            password = "SKUH.woth4fus7aft"
+            host = "host",
+            username = "user",
+            password = "password"
         )
         on.exit(dbDisconnect(conn), add = TRUE)
         
@@ -995,9 +995,9 @@ server <- function(input, output, session) {
         conn <- dbConnect(
             drv = RMySQL::MySQL(),
             dbname = "KI",
-            host = "database-tessa.cp1otesgrats.eu-west-1.rds.amazonaws.com",
-            username = "admin",
-            password = "SKUH.woth4fus7aft"
+            host = "host",
+            username = "user",
+            password = "password"
         )
         on.exit(dbDisconnect(conn), add = TRUE)
         
@@ -1016,9 +1016,9 @@ server <- function(input, output, session) {
                 conn <- dbConnect(
                     drv = RMySQL::MySQL(),
                     dbname = "KI",
-                    host = "database-tessa.cp1otesgrats.eu-west-1.rds.amazonaws.com",
-                    username = "admin",
-                    password = "SKUH.woth4fus7aft"
+                    host = "host",
+                    username = "user",
+                    password = "password"
                 )
                 on.exit(dbDisconnect(conn), add = TRUE)
                 
@@ -1041,9 +1041,9 @@ server <- function(input, output, session) {
         conn <- dbConnect(
             drv = RMySQL::MySQL(),
             dbname = "KI",
-            host = "database-tessa.cp1otesgrats.eu-west-1.rds.amazonaws.com",
-            username = "admin",
-            password = "SKUH.woth4fus7aft"
+            host = "host",
+            username = "user",
+            password = "password"
         )
         on.exit(dbDisconnect(conn), add = TRUE)
         
@@ -1069,9 +1069,9 @@ server <- function(input, output, session) {
         conn <- dbConnect(
             drv = RMySQL::MySQL(),
             dbname = "KI",
-            host = "database-tessa.cp1otesgrats.eu-west-1.rds.amazonaws.com",
-            username = "admin",
-            password = "SKUH.woth4fus7aft"
+            host = "host",
+            username = "user",
+            password = "password"
         )
         on.exit(dbDisconnect(conn), add = TRUE)
         
@@ -1096,9 +1096,9 @@ server <- function(input, output, session) {
         conn <- dbConnect(
             drv = RMySQL::MySQL(),
             dbname = "KI",
-            host = "database-tessa.cp1otesgrats.eu-west-1.rds.amazonaws.com",
-            username = "admin",
-            password = "SKUH.woth4fus7aft"
+            host = "host",
+            username = "user",
+            password = "password"
         )
         on.exit(dbDisconnect(conn), add = TRUE)
         
@@ -1124,9 +1124,9 @@ server <- function(input, output, session) {
         conn <- dbConnect(
             drv = RMySQL::MySQL(),
             dbname = "KI",
-            host = "database-tessa.cp1otesgrats.eu-west-1.rds.amazonaws.com",
-            username = "admin",
-            password = "SKUH.woth4fus7aft"
+            host = "host",
+            username = "user",
+            password = "password"
         )
         on.exit(dbDisconnect(conn), add = TRUE)
         
@@ -1151,9 +1151,9 @@ server <- function(input, output, session) {
         conn <- dbConnect(
             drv = RMySQL::MySQL(),
             dbname = "KI",
-            host = "database-tessa.cp1otesgrats.eu-west-1.rds.amazonaws.com",
-            username = "admin",
-            password = "SKUH.woth4fus7aft"
+            host = "host",
+            username = "user",
+            password = "password"
         )
         on.exit(dbDisconnect(conn), add = TRUE)
         
@@ -1178,9 +1178,9 @@ server <- function(input, output, session) {
         conn <- dbConnect(
             drv = RMySQL::MySQL(),
             dbname = "KI",
-            host = "database-tessa.cp1otesgrats.eu-west-1.rds.amazonaws.com",
-            username = "admin",
-            password = "SKUH.woth4fus7aft"
+            host = "host",
+            username = "user",
+            password = "password"
         )
         on.exit(dbDisconnect(conn), add = TRUE)
         
@@ -1205,9 +1205,9 @@ server <- function(input, output, session) {
         conn <- dbConnect(
             drv = RMySQL::MySQL(),
             dbname = "KI",
-            host = "database-tessa.cp1otesgrats.eu-west-1.rds.amazonaws.com",
-            username = "admin",
-            password = "SKUH.woth4fus7aft"
+            host = "host",
+            username = "user",
+            password = "password"
         )
         on.exit(dbDisconnect(conn), add = TRUE)
         
@@ -1241,9 +1241,9 @@ server <- function(input, output, session) {
         conn <- dbConnect(
             drv = RMySQL::MySQL(),
             dbname = "KI",
-            host = "database-tessa.cp1otesgrats.eu-west-1.rds.amazonaws.com",
-            username = "admin",
-            password = "SKUH.woth4fus7aft"
+            host = "host",
+            username = "user",
+            password = "password"
         )
         on.exit(dbDisconnect(conn), add = TRUE)
         
@@ -1271,9 +1271,9 @@ server <- function(input, output, session) {
         conn <- dbConnect(
             drv = RMySQL::MySQL(),
             dbname = "KI",
-            host = "database-tessa.cp1otesgrats.eu-west-1.rds.amazonaws.com",
-            username = "admin",
-            password = "SKUH.woth4fus7aft"
+            host = "host",
+            username = "user",
+            password = "password"
         )
         on.exit(dbDisconnect(conn), add = TRUE)
         
@@ -1301,9 +1301,9 @@ server <- function(input, output, session) {
         conn <- dbConnect(
             drv = RMySQL::MySQL(),
             dbname = "KI",
-            host = "database-tessa.cp1otesgrats.eu-west-1.rds.amazonaws.com",
-            username = "admin",
-            password = "SKUH.woth4fus7aft"
+            host = "host",
+            username = "user",
+            password = "password"
         )
         on.exit(dbDisconnect(conn), add = TRUE)
         
@@ -1327,9 +1327,9 @@ server <- function(input, output, session) {
         conn <- dbConnect(
             drv = RMySQL::MySQL(),
             dbname = "KI",
-            host = "database-tessa.cp1otesgrats.eu-west-1.rds.amazonaws.com",
-            username = "admin",
-            password = "SKUH.woth4fus7aft"
+            host = "host",
+            username = "user",
+            password = "password"
         )
         on.exit(dbDisconnect(conn), add = TRUE)
         
@@ -1369,9 +1369,9 @@ server <- function(input, output, session) {
         conn <- dbConnect(
             drv = RMySQL::MySQL(),
             dbname = "KI",
-            host = "database-tessa.cp1otesgrats.eu-west-1.rds.amazonaws.com",
-            username = "admin",
-            password = "SKUH.woth4fus7aft"
+            host = "host",
+            username = "user",
+            password = "password"
         )
         on.exit(dbDisconnect(conn), add = TRUE)
         
@@ -1402,9 +1402,9 @@ server <- function(input, output, session) {
         conn <- dbConnect(
             drv = RMySQL::MySQL(),
             dbname = "KI",
-            host = "database-tessa.cp1otesgrats.eu-west-1.rds.amazonaws.com",
-            username = "admin",
-            password = "SKUH.woth4fus7aft"
+            host = "host",
+            username = "user",
+            password = "password"
         )
         on.exit(dbDisconnect(conn), add = TRUE)
         
@@ -1430,9 +1430,9 @@ server <- function(input, output, session) {
         conn <- dbConnect(
             drv = RMySQL::MySQL(),
             dbname = "KI",
-            host = "database-tessa.cp1otesgrats.eu-west-1.rds.amazonaws.com",
-            username = "admin",
-            password = "SKUH.woth4fus7aft"
+            host = "host",
+            username = "user",
+            password = "password"
         )
         on.exit(dbDisconnect(conn), add = TRUE)
         
@@ -1452,9 +1452,9 @@ server <- function(input, output, session) {
     #     conn <- dbConnect(
     #         drv = RMySQL::MySQL(),
     #         dbname = "KI",
-    #         host = "database-tessa.cp1otesgrats.eu-west-1.rds.amazonaws.com",
-    #         username = "admin",
-    #         password = "SKUH.woth4fus7aft"
+    #         host = "host",
+    #         username = "user",
+    #         password = "password"
     #     )
     #     on.exit(dbDisconnect(conn), add = TRUE)
     #     
